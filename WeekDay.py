@@ -4,7 +4,7 @@ import calendar # A builtin module to use calendar related functions
 
 #To represent the tile to our web page
 str.title("WeekDay Using streamlit")
-Input_date=srt.date_input("Enter DateInput")
+Input_date=srt.date_input("Enter DateInput",min_value=datetime.date(1800,1,1),max_value=datetime.date(2100,1,1))
 #Days of a week
 Weekdays=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 year=Input_date.year
